@@ -12,7 +12,7 @@ export function SocketProvider({ id, children }) {
 
   useEffect(() => {
     const newSocket = io(
-      'http://localhost:5000',
+      'https://basic-server-2gwl.onrender.com:443',
       { query: { id } }
     )
     setSocket(newSocket)
